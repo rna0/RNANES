@@ -9,5 +9,6 @@
   
 -you can play with a keyboard or this specific [controller](https://www.amazon.com/DOORGA-Controller-Joystick-Raspberry-Emulators/dp/B07W19W65Z/ref=sr_1_6?keywords=NES+usb&qid=1580800839&sr=8-6)
 
--the emulator is in the server, the client can show the emulation after connecting
+--the emulator is in the server, the client can show the emulation and get input after connecting to the server
 -
+-only the first client to connect will gain access to play the game, all connections afterwards will be for viewing only
