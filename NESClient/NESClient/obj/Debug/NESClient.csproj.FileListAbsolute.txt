@@ -18,3 +18,23 @@ E:\FINALS\NESClient\NESClient\obj\Debug\NESClient.csproj.GenerateResource.cache
 E:\FINALS\NESClient\NESClient\obj\Debug\NESClient.csproj.CoreCompileInputs.cache
 E:\FINALS\NESClient\NESClient\obj\Debug\NESClient.exe
 E:\FINALS\NESClient\NESClient\obj\Debug\NESClient.pdb
+H:\FINALS\not working\3 NESClient - working per image per thread\NESClient\bin\Debug\NESClient.exe.config
+H:\FINALS\not working\3 NESClient - working per image per thread\NESClient\bin\Debug\NESClient.exe
+H:\FINALS\not working\3 NESClient - working per image per thread\NESClient\bin\Debug\NESClient.pdb
+H:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.csprojAssemblyReference.cache
+H:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.UI.resources
+H:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.Properties.Resources.resources
+H:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.csproj.GenerateResource.cache
+H:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.csproj.CoreCompileInputs.cache
+H:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.exe
+H:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.pdb
+G:\FINALS\not working\3 NESClient - working per image per thread\NESClient\bin\Debug\NESClient.exe.config
+G:\FINALS\not working\3 NESClient - working per image per thread\NESClient\bin\Debug\NESClient.exe
+G:\FINALS\not working\3 NESClient - working per image per thread\NESClient\bin\Debug\NESClient.pdb
+G:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.csprojAssemblyReference.cache
+G:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.UI.resources
+G:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.Properties.Resources.resources
+G:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.csproj.GenerateResource.cache
+G:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.csproj.CoreCompileInputs.cache
+G:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.exe
+G:\FINALS\not working\3 NESClient - working per image per thread\NESClient\obj\Debug\NESClient.pdb
