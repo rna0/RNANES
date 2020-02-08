@@ -66,7 +66,7 @@
         /// <param name="state"><c>true</c> if button is down, <c>false</c> if button is up</param>
         public void setButtonState(Button button, bool state)
         {
-            System.Console.WriteLine(button.ToString() + " is pressed!");
+            //System.Console.WriteLine(button.ToString() + " is pressed!");
             _buttonStates[(int)button] = state;
         }
 
