@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{89AF9EB6-7E93-4FDF-823F-DFCC511F13E1}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>NESClient</RootNamespace>
     <AssemblyName>NESClient</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -88,6 +88,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,6 +102,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\x86\Debug\select.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\x86\Debug\approved.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\x86\Debug\loading.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\x86\Debug\null.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
