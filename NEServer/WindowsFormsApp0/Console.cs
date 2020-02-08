@@ -11,6 +11,10 @@ namespace RoyNES
     public class Console
     {
         /// <summary>
+        /// adds all the information acout the game
+        /// </summary>
+        public string gameDetailes = "";
+        /// <summary>
         /// This Console's CPU.
         /// </summary>
         public readonly Cpu Cpu;
@@ -90,24 +94,29 @@ namespace RoyNES
         /// <param name="path">Path to the iNES cartridge file to load</param>
         public bool LoadCartridge(string path)
         {
+            gameDetailes += "Loading GAME " + path + "\n";
             System.Console.WriteLine("Loading ROM " + path);
 
             Cartridge = new Cartridge(path);
             if (Cartridge.Invalid) return false;
 
             // Set mapper
+            gameDetailes += "iNES Mapper Number: " + Cartridge.MapperNumber.ToString();
             System.Console.Write("iNES Mapper Number: " + Cartridge.MapperNumber.ToString());
             switch (Cartridge.MapperNumber)
             {
                 case 0:
+                    gameDetailes += " (NROM) Supported!" + "\n";
                     System.Console.WriteLine(" (NROM) Supported!");
                     Mapper = new NromMapper(this);
                     break;
                 case 4:
+                    gameDetailes += " (MMC3) Supported!" + "\n";
                     System.Console.WriteLine(" (MMC3) Supported!");
                     Mapper = new Mmc3Mapper(this);
                     break;
                 default:
+                    gameDetailes += " mapper is not supported" + "\n";
                     System.Console.WriteLine(" mapper is not supported");
                     return false;
             }
@@ -167,6 +176,10 @@ namespace RoyNES
                 int sleepTime = (int)((1000.0 / 60) - timeTaken);
                 Thread.Sleep(Math.Max(sleepTime, 0));
             }
+        }
+        public override string ToString()
+        {
+            return gameDetailes;
         }
     }    
 }

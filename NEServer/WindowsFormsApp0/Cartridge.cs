@@ -17,6 +17,10 @@ namespace RoyNES
         byte[] _prgRam;
 
         /// <summary>
+        /// adds all the information acout the game
+        /// </summary>
+        public string gameDetailes = "";
+        /// <summary>
         /// Gets or sets the console that this cartridge is loaded into.
         /// </summary>
         /// <value>The console that this this cartridge is loaded into</value>
@@ -172,6 +176,7 @@ namespace RoyNES
             uint magicNum = reader.ReadUInt32();
             if (magicNum != HeaderMagic)
             {
+                gameDetailes += "Magic header value (" + magicNum.ToString("X4") + ") is incorrect" + "\n";
                 System.Console.WriteLine("Magic header value (" + magicNum.ToString("X4") + ") is incorrect");
                 Invalid = true;
                 return;
@@ -179,17 +184,21 @@ namespace RoyNES
 
             // Size of PRG ROM
             PrgRomBanks = reader.ReadByte();
+            gameDetailes += (16 * PrgRomBanks).ToString() + "Kb of PRG ROM" + "\n";
             System.Console.WriteLine((16 * PrgRomBanks).ToString() + "Kb of PRG ROM");
 
             // Size of CHR ROM (Or set CHR RAM if using it)
             ChrBanks = reader.ReadByte();
-            if (ChrBanks == 0) {
+            if (ChrBanks == 0)
+            {
+                gameDetailes += "Cartridge uses CHR RAM" + "\n";
                 System.Console.WriteLine("Cartridge uses CHR RAM");
                 ChrBanks = 2;
                 UsesChrRam = true;
             }
-            else 
+            else
             {
+                gameDetailes += (8 * ChrBanks).ToString() + "Kb of CHR ROM" + "\n";
                 System.Console.WriteLine((8 * ChrBanks).ToString() + "Kb of CHR ROM");
                 UsesChrRam = false;
             }
@@ -224,6 +233,10 @@ namespace RoyNES
 
             // Mapper Number
             MapperNumber = _flags7 & 0xF0 | (_flags6 >> 4 & 0xF);
+        }
+        public override string ToString()
+        {
+            return gameDetailes;
         }
     }   
 }
