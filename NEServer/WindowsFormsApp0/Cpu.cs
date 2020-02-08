@@ -336,10 +336,6 @@ namespace RoyNES
             PushStack(lo);
         }
 
-        /// <summary>
-        /// Gets the state of all 8 flags which fit perfectly into one byte
-        /// </summary>
-        /// <returns>all the flags in one byte</returns>
         byte GetStatusFlags()
         {
             byte flags = 0;
@@ -356,11 +352,6 @@ namespace RoyNES
             return flags;
         }
 
-        /// <summary>
-        /// Sets the state of all 8 flags which fit perfectly into one byte
-        /// </summary>
-        /// <param name="flags">all the flags in one byte.</param>
-        /// <returns></returns>
         void SetProcessorFlags(byte flags)
         {
             C = IsBitSet(flags, 0);
