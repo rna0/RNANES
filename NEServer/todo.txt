@@ -1,7 +1,0 @@
-1. end connection properly - done
-2. client start game            
-3. client control input
-4. client change input
-5. client show detailes of game
-6. client choose game properly
-7. only one game
