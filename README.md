@@ -1,14 +1,22 @@
-## WELCOME TO MY RNA NES EMU!
+## WELCOME TO RNA NES EMU Main Page
 
--this is my fully working NES emulator written in C#
--thouth I used methods to get better resaults the emulatin is a bit slow and runs on 30 fps, nevertheless it is still playable
--it only supports games using the following mappers:
-
+-This emulator is experimental and not a fully working NES emulator written in C#.
+-The emulatin is Slow but playable and runs on 30 fps.
+-Supported mappers:
   -NromMapper
   -Mmc3Mapper
   
 -you can play with a keyboard or this specific [controller](https://www.amazon.com/DOORGA-Controller-Joystick-Raspberry-Emulators/dp/B07W19W65Z/ref=sr_1_6?keywords=NES+usb&qid=1580800839&sr=8-6)
 
---the emulator is in the server, the client can show the emulation and get input after connecting to the server
--
--only the first client to connect will gain access to play the game, all connections afterwards will be for viewing only
+--The reason why this emulator is experimental is that it's backend and frontend are devided into a server and a client respectively.
+
+--This way Clients are the ones who should get the roms and the server should only care about the emulation part.
+-The server supports multiple client connections but only the first client to connect will gain access to play the Game.
+-All connections after the first will be for viewing only.
+
+things to do:
+- Make audio work.
+- Add support for More Mappers
+- Improve Controller Bindings
+- Improve User Interface
+- Add seacond controller support
